@@ -71,6 +71,12 @@ The generated page will include:
 
 This tool does not replace official Azure tools. The displayed information is fetched directly from the Azure Update Blog and should be verified using Azure’s official sources before making critical decisions.
 
+## 📜 Contributors
+
+| Contributor       | LinkedIn Profile                                |
+|-------------------|-------------------------------------------------|
+| Tommaso Sacco - Cloud Solution Architect | [Your LinkedIn](https://www.linkedin.com/in/tommasosaccoit/) |
+
 ## 🤝 Contributions
 
 Contributions are welcome! If you'd like to improve this project, feel free to open a pull request or create an issue.
