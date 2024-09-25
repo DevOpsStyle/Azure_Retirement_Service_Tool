@@ -75,7 +75,7 @@ This tool does not replace official Azure tools. The displayed information is fe
 
 | Contributor       | LinkedIn Profile                                |
 |-------------------|-------------------------------------------------|
-| Tommaso Sacco - Cloud Solution Architect | [Your LinkedIn](https://www.linkedin.com/in/tommasosaccoit/) |
+| Tommaso Sacco - Cloud Solution Architect | [LinkedIn Profile](https://www.linkedin.com/in/tommasosaccoit/) |
 
 ## 🤝 Contributions
 
