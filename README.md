@@ -27,6 +27,10 @@ With Azure offering a wide range of services, keeping track of service retiremen
 - **Formatted HTML Output:** All information is displayed in a clean, well-structured HTML page.
 - **Simplified Search:** Users can quickly search for specific services or retirement dates, improving visibility and management of critical deadlines.
 
+## 📸 Example Result
+
+![Azure Service Retirement Tool](images/Azure_Retirement_Service_Tool.jpeg)
+
 ## 🛠️ Requirements
 
 - Python 3.x
