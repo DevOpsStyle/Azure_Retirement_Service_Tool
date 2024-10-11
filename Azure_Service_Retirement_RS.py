@@ -1,6 +1,6 @@
 ############################################
 # Tommaso Sacco - Cloud Solution Architect #
-#                   V0.2                   #
+#                   V0.3                   #
 ############################################
 import feedparser
 import spacy
@@ -36,11 +36,16 @@ def extract_dates_regex(text):
 
     # Regex per formati di date con suffissi e virgole
     regex_patterns = [
-        r'\b\d{1,2}(st|nd|rd|th)?\s(?:January|February|March|April|May|June|July|August|September|October|November|December),?\s\d{4}\b',  # 31st August, 2024
-        r'\b(?:January|February|March|April|May|June|July|August|September|October|November|December)\s\d{1,2}(st|nd|rd|th)?,?\s\d{4}\b',  # 31st August 2024
+        r'\b\d{1,2}(st|nd|rd|th)?\s(?:January|February|March|April|May|June|July|August|September|October|November|December),?\s\d{4}\b',
+        # 31st August, 2024
+        r'\b(?:January|February|March|April|May|June|July|August|September|October|November|December)\s\d{1,2}(st|nd|rd|th)?,?\s\d{4}\b',
+        # 31st August 2024
         r'\b\d{1,2}[-/](?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)[a-zA-Z]*[-/]\d{4}\b',  # 30-Sep-2026
         r'\b\d{1,2}[-/]\d{1,2}[-/]\d{4}\b',  # 26/09/2025
-        r'\b(?:January|February|March|April|May|June|July|August|September|October|November|December)\s\d{4}\b'  # March 2025
+        r'\b(?:January|February|March|April|May|June|July|August|September|October|November|December)\s\d{4}\b',
+        # March 2025
+        r'\b\d{1,2}\s(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)\s\d{4}\b',  # 1 Dec 2024
+        r'\b(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)\s\d{1,2},\s\d{4}\b'  # Sep 30, 2026
     ]
 
     for regex in regex_patterns:
