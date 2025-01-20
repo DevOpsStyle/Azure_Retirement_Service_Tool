@@ -74,7 +74,7 @@ def extract_retirement_date(title, description):
 # Funzione per ottenere i dati dal feed RSS e generare la tabella
 def get_retirement_data():
     logging.info('Apertura del link RSS per ottenere i dati')
-    url = "https://aztty.azurewebsites.net/rss/updates?category=retirements"
+    url = "https://www.microsoft.com/releasecommunications/api/v2/azure/rss"
     feed = feedparser.parse(url)
 
     retirements = []
